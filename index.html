@@ -1,22 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>Shopping Cart</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <header>
+      <div class="header-content">
+        <a href="#" class="logo">
+          <img src="./assets/Meubel_logo.png" alt="logo" />
+          Marmeto
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="header-icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-heart"></i>
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/parakeet-line/48/shopping-cart.png"
+            alt="shopping-cart"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="hero">
+      <img src="./assets/bg_cover.png" class="bg-cover" alt="cover" />
     </div>
+
+    <main class="container">
+      <div class="cart-section">
+        <div>
+          <div class="cart-header">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Subtotal</span>
+          </div>
+          <div class="cart-items">
+            <!-- Cart items will be shown here -->
+          </div>
+        </div>
+
+        <div class="cart-totals">
+          <h2>Cart Totals</h2>
+          <div class="totals-row">
+            <span>Subtotal</span>
+            <span class="subtotal">Rs. 0.00</span>
+          </div>
+          <div class="totals-row">
+            <span>Total</span>
+            <span class="total total-amount">Rs. 0.00</span>
+          </div>
+          <button class="checkout-btn">Check Out</button>
+        </div>
+      </div>
+    </main>
+
+    <section class="services">
+      <div class="services-grid">
+        <div class="service-item">
+          <img
+            src="./assets/high quality.png"
+            class="footer-img"
+            alt="high quality"
+          />
+          <div class="footer-text">
+            <h3>High Quality</h3>
+            <p>crafted from top materials</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="./assets/warrenty.png" class="footer-img" alt="warrenty" />
+          <div class="footer-text">
+            <h3>Warranty Protection</h3>
+            <p>Over 2 years</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img src="./assets/shipping.png" class="footer-img" alt="shipping" />
+          <div class="footer-text">
+            <h3>Free Shipping</h3>
+            <p>Order over 150 $</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img
+            src="./assets/assistance.png"
+            class="footer-img"
+            alt="assistance"
+          />
+          <div class="footer-text">
+            <h3>24 / 7 Support</h3>
+            <p>Dedicated support</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
